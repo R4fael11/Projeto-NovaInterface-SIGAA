@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGAA UNB</title>
+</head>
+<body>
+    <header>
+        <div class="logo">SIGAA</div>
+        <div class="header-title">Sistema de Gestão Acadêmica</div>
+        <div class="user-info">Bem-vindo(a), Usuário</div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Minhas Disciplinas</a></li>
+                <li><a href="#">Notas e Frequência</a></li>
+                <li><a href="#">Biblioteca</a></li>
+                <li><a href="#">Configurações</a></li>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Bem-vindo(a) ao SIGAA</h2>
+            <p>Aqui você pode acessar suas disciplinas, verificar notas e frequência, acessar materiais da biblioteca e configurar seu perfil.</p>
+        </main>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">SIGAA</div>
+        <div class="header-title">Sistema de Gestão Acadêmica</div>
+        
+        <!-- Dropdown de Login -->
+        <div class="user-info" id="userButton">
+            Bem-vindo(a), <span id="userDisplay">Usuário</span>
+            <div class="login-dropdown" id="loginDropdown">
+                <form id="loginForm">
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Entrar</button>
+                </form>
+                <p id="errorMessage" class="error-message"></p>
+            </div>
+        </div>
+    </header>
+
+     <!-- Conteúdo Principal -->
+     <div class="container" id="mainContainer" style="display: none;">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Minhas Disciplinas</a></li>
+                <li><a href="#">Notas e Frequência</a></li>
+                <li><a href="#">Biblioteca</a></li>
+                <li><a href="#">Configurações</a></li>
+                <li><a href="#" id="logoutButton">Sair</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Bem-vindo(a) ao SIGAA</h2>
+            <p>Aqui você pode acessar suas disciplinas, verificar notas e frequência, acessar materiais da biblioteca e configurar seu perfil.</p>
+        </main>
+    </div>
+
+    <!-- Tela de Login -->
+    <div class="login-screen" id="loginScreen">
+        <h2>Login no SIGAA</h2>
+        <form id="loginForm">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="errorMessage" class="error-message"></p>
+    </div>
+
+    <!-- Tela Principal -->
+    <header id="header" style="display: none;">
+        <div class="logo">SIGAA</div>
+        <div class="header-title">Sistema de Gestão Acadêmica</div>
+        <div class="user-info">Bem-vindo(a), <span id="userDisplay"></span></div>
+    </header>
+
+    <div class="container" id="mainContainer" style="display: none;">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Minhas Disciplinas</a></li>
+                <li><a href="#">Notas e Frequência</a></li>
+                <li><a href="#">Biblioteca</a></li>
+                <li><a href="#">Configurações</a></li>
+                <li><a href="#" id="logoutButton">Sair</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Bem-vindo(a) ao SIGAA</h2>
+            <p>Aqui você pode acessar suas disciplinas, verificar notas e frequência, acessar materiais da biblioteca e configurar seu perfil.</p>
+        </main>
+    </div>
+
+    <footer id="footer" style="display: none;">
+        <p>&copy; 2024 SIGAA. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
